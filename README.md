@@ -22,7 +22,7 @@ This is an SBT-based Scala project. I'm assuming that you have SBT installed alr
 
 To build the project, execute this command which will leave a `.jar` file in a `./target/scala-2.xx` directory,
 where `xx` is the version of Scala SBT is using (which we don't discuss here). The `.jar` file will contain
-and executable console application. The exact name of the 
+and executable console application. 
 
 * `sbt package`
 
