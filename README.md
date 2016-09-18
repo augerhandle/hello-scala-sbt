@@ -5,8 +5,9 @@
 An simple hello-world program in Scala using SBT as the build tool.
 
 It illustrates the following things:
-* ultra simple console app that calls out to some classes in the project
+* ultra simple console app that calls out to some classes and uses external libraries
 * how to use `slf4j` logging (based on `logback`)
+* example of using typesafe config
 
 ## Contents
 
@@ -15,6 +16,7 @@ It illustrates the following things:
 * `src/main/scala/net/augerhandle/hello/*.scala` : other Scala classes used by the app
 * `build.sbt` : the SBT build file used to build and run this project
 * `src/main/resources/logback.xml` : the logging config file 
+* `src/main/resources/application.conf` : the typesafe config file 
 
 ## Building and Running
 
