@@ -1,21 +1,18 @@
 package net.augerhandle.hello
 
 import org.slf4j.LoggerFactory
+import com.typesafe.config._
+import scala.collection.JavaConversions._
 
 object App {
-  private val logger = LoggerFactory.getLogger("application")
+  private val logger = LoggerFactory.getLogger(this.getClass())
 
   def main( args : Array[String] ) {
-    logger.info("running app..." )
-    run()
-    logger.info("...terminating app")
-  }
+    logger.info("begin..." )
 
-  private def run() : Unit = {
-    var word_1 : String = (new WordGenerator("Hello")).generate()
-    var word_2 : String = (new WordGenerator("world")).generate()
-    var message : String = s"${word_1}, ${word_2}!"
+    val appRunnable = new AppRunnable("app.wordsToConvert")
+    appRunnable.run()
 
-    println( message )
+    logger.info("...end")
   }
 }
